@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "355189998487",
+    "firebase_url": "https://whosapp-d1b35.firebaseio.com",
+    "project_id": "whosapp-d1b35",
+    "storage_bucket": "whosapp-d1b35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355189998487:android:c568ffe7e2c790dcc8fad2",
+        "android_client_info": {
+          "package_name": "com.ashinc.whosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355189998487-g0qd3bo27fhh7mrriq6f2qdet520hsau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiM08EfuCyZal7lM852KNLpO7abyzMVKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355189998487-g0qd3bo27fhh7mrriq6f2qdet520hsau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
