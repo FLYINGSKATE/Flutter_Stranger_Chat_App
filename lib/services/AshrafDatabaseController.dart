@@ -277,7 +277,8 @@ class AshDBController {
         }
         else{
           print('FETCHED UNBLOCK USER');
-          print("Final USer "+value.documents[randomNumber]['aboutMe'] );
+          print(value.documents[randomNumber].data.toString());
+          print("Final User "+value.documents[randomNumber]['About Me'] );
           randomUser = RandomUser(userName:value.documents[randomNumber].documentID,profilePhoto: value.documents[randomNumber]['profilePhoto'] ,age: value.documents[randomNumber]['age'],aboutMe: value.documents[randomNumber]['aboutMe'],isOnline: value.documents[randomNumber]['isOnline']);
           print(randomUser.profilePhoto+" and this is my dp");
           return randomUser;

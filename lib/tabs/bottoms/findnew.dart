@@ -31,8 +31,8 @@ class _FindNewState extends State<FindNew> {
           builder: (BuildContext context,AsyncSnapshot<RandomUser> snapshot){
           if (snapshot.connectionState == ConnectionState.done) {
             randomUser = snapshot.data;
-
-            if(randomUser.profilePhoto==null){
+            print(snapshot.data.toString());
+            if(!snapshot.hasData){
               return Container(child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[

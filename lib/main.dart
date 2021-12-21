@@ -23,8 +23,24 @@ class MyApp extends StatelessWidget {
     return StreamProvider<User>.value(
       value: AuthService().user,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Stranger Friends',
         theme: ThemeData(
+          inputDecorationTheme: InputDecorationTheme(
+            focusColor: Colors.black,
+            focusedBorder:OutlineInputBorder(
+              borderRadius: BorderRadius.circular(25.0),
+              borderSide: const BorderSide(color: Colors.black, width: 2.0),
+            ),
+            border: new OutlineInputBorder(
+              borderRadius: new BorderRadius.circular(25.0),
+              borderSide: new BorderSide(
+              ),
+            ),
+            contentPadding: EdgeInsets.all(26.0),
+            labelStyle: TextStyle(color: Colors.black,fontSize: 14,fontWeight: FontWeight.bold),
+          ),
+
           // This is the theme of your application
           // Try running your application with "flutter run". You'll see the
           // application has a blue toolbar. Then, without quitting the app, try
@@ -56,7 +72,6 @@ class MyApp extends StatelessWidget {
           'creategroup':(context)=>CreateGroup(),
           'settings':(context)=>Settings(),
           'signin':(context)=>SignIn(),
-          
           'visitprofile':(context)=>VisitProfile(),
           'blocklist':(context)=>BlockList(),
         }

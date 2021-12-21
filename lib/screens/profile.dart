@@ -19,7 +19,9 @@ class _ProfileState extends State<Profile> {
     print("USER PROFILE DATA : "+args.toString());
 
     UserData userData = args["userData"];
-    initialText = userData.aboutMe;
+    if(userData.aboutMe!=null){
+      initialText = userData.aboutMe;
+    }
 
     return Scaffold(
       backgroundColor: Colors.black,

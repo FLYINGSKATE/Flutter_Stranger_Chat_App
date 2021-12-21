@@ -62,6 +62,7 @@ class SideDrawer extends StatelessWidget {
                       onTap: () async{
                         //Clear SharedPreferences here
                         await _auth.LogOut();
+                        Navigator.pushReplacementNamed(context, 'signin');
                       },
                     ),
                   ],

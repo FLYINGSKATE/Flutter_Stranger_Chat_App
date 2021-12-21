@@ -72,15 +72,16 @@ class _SignInState extends State<SignIn> {
                     decoration: new InputDecoration(
                       labelText: "Enter Password",
                       fillColor: Colors.white,
-                      border: new OutlineInputBorder(
-                        borderRadius: new BorderRadius.circular(25.0),
-                        borderSide: new BorderSide(
-                        ),
-                      ),
                       //fillColor: Colors.green
                     ),
                     obscureText: _obscureText,
-                    validator: (val)=> val.length<6?'Enter 6+ Characters':null,
+                    validator: (val){
+                      val.length<6?'Enter 6+ Characters':null;
+                      isNotLoading = true;
+                      setState(() {
+
+                      });
+                    },
                     onChanged: (val){
                       setState(() {
                         password = val;
